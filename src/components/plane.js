@@ -8,6 +8,10 @@ import xb70top from '../svg/xb70-top.svg';
 import xb70side from '../svg/xb70-side.svg';
 import xb70front from '../svg/xb70-front.svg';
 
+import a380top from '../svg/a380-top.svg';
+import a380side from '../svg/a380-side.svg';
+import a380front from '../svg/a380-front.svg';
+
 class PlaneSVG extends Component {
 	constructor(props) {
 		super(props);
@@ -21,7 +25,8 @@ class PlaneSVG extends Component {
 
 	getPlaneSvg(props){
 		let planeSvgs = {sr71: {0: sr71top, 1: sr71side, 2: sr71front},
-					xb70: {0: xb70top, 1:  xb70side, 2: xb70front}
+					xb70: {0: xb70top, 1:  xb70side, 2: xb70front},
+					a380: {0: a380top, 1:  a380side, 2: a380front},
 					};
 
 		let plane = props.plane;

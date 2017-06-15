@@ -11,7 +11,8 @@ class App extends Component {
 		this.state = {zoom: 1,
 									view: 0,
 									sr71: true,
-									xb70: true
+									xb70: true,
+									a380: false
 									};
 		this.handleSetZoom = this.handleSetZoom.bind(this);
 		this.handleHidePlane = this.handleHidePlane.bind(this);
@@ -50,6 +51,15 @@ class App extends Component {
 							<div className="wrap-drag">
 								<div className="handle">Drag: XB-70</div>
 								<PlaneSVG plane="xb70" view={this.state.view}/>
+							</div>
+						</Draggable>
+					: null}
+
+					{this.state.a380 ? 
+						<Draggable axis="both" handle=".handle" position={null}>
+							<div className="wrap-drag">
+								<div className="handle">Drag: A380-800</div>
+								<PlaneSVG plane="a380" view={this.state.view}/> 
 							</div>
 						</Draggable>
 					: null}
