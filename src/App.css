@@ -1,32 +1,13 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+*{
+  user-select: none;
 }
 .PlaneSVG{
   position: absolute;
   z-index: -10;
   pointer-events:none;
-
 }
 .handle{
   width: 100px;
@@ -37,7 +18,10 @@
   position: relative;
   cursor: move;
   cursor: grab;
+  border-radius: 4px;
 }
+
+/*Settings*/
 .settings-box {
     position: fixed;
     right: 0;
@@ -47,6 +31,114 @@
     padding: 1em;
     z-index: 950000;
 }
-*{
-  user-select: none;
+.settings-zoom{
+  margin-bottom: 10px;
+}
+.settings-view{
+  margin-bottom: 10px;
+}
+
+/*Button CSS*/
+.btn {
+    color: #ffffff;
+    background: #00b9ef;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    width: 70px;
+}
+
+.btn:hover {
+  background: #56ade3;
+  text-decoration: none;
+}
+
+/*Slider CSS*/
+/*This is very long, wow.*/
+input[type=range].slider {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 1.95px 0;
+}
+input[type=range].slider:focus {
+  outline: none;
+}
+input[type=range].slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 23.1px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #484d4d;
+  border-radius: 0px;
+  border: 0px solid rgba(1, 1, 1, 0);
+}
+input[type=range].slider::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #670000, 0px 0px 0px #810000;
+  border: 0px solid rgba(0, 30, 0, 0);
+  height: 27px;
+  width: 18px;
+  border-radius: 0px;
+  background: #00b9ef;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -1.95px;
+}
+input[type=range].slider:focus::-webkit-slider-runnable-track {
+  background: #575d5d;
+}
+input[type=range].slider::-moz-range-track {
+  width: 100%;
+  height: 23.1px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #484d4d;
+  border-radius: 0px;
+  border: 0px solid rgba(1, 1, 1, 0);
+}
+input[type=range].slider::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #670000, 0px 0px 0px #810000;
+  border: 0px solid rgba(0, 30, 0, 0);
+  height: 27px;
+  width: 18px;
+  border-radius: 0px;
+  background: #00b9ef;
+  cursor: pointer;
+}
+input[type=range].slider::-ms-track {
+  width: 100%;
+  height: 23.1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range].slider::-ms-fill-lower {
+  background: #393d3d;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range].slider::-ms-fill-upper {
+  background: #484d4d;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range].slider::-ms-thumb {
+  box-shadow: 0px 0px 0px #670000, 0px 0px 0px #810000;
+  border: 0px solid rgba(0, 30, 0, 0);
+  height: 27px;
+  width: 18px;
+  border-radius: 0px;
+  background: #00b9ef;
+  cursor: pointer;
+  height: 23.1px;
+}
+input[type=range].slider:focus::-ms-fill-lower {
+  background: #484d4d;
+}
+input[type=range].slider:focus::-ms-fill-upper {
+  background: #575d5d;
 }

@@ -34,18 +34,18 @@ export default class SettingsBox extends Component {
 	render() {
 		return (
 		<div className="settings-box">
-			<div id="settings-zoom">
+			<div className="settings-zoom">
 				<b>Zoom:</b>
 				<br/>
-				<input type="range" onInput={this.handleInput} />
+				<input type="range" onInput={this.handleInput} className="slider"/>
 				<br/>
 			</div>
-			<div id="settings-view">
-				<button id="0" onClick={this.handleView.bind(this)}>Top</button> <br/>
-				<button id="1" onClick={this.handleView.bind(this)}>Side</button> <br/>				
-				<button id="2" onClick={this.handleView.bind(this)}>Front</button> <br/>
+			<div className="settings-view">
+				<button className="btn" id="0" onClick={this.handleView.bind(this)}>Top</button> <br/>
+				<button className="btn" id="1" onClick={this.handleView.bind(this)}>Side</button> <br/>				
+				<button className="btn" id="2" onClick={this.handleView.bind(this)}>Front</button> <br/>
 			</div>
-			<div id="settings-showhide">
+			<div className="settings-showhide">
 				<b>Show/Hide Planes</b>
 				<br/>
 				<input type="checkbox" name="sr71" defaultChecked="checked" onChange={this.handleChange.bind(this)} />SR-71
