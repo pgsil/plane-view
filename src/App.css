@@ -49,5 +49,8 @@
     z-index: 950000;
 }
 .MOTHERFUCK{
-  
+
+}
+*{
+  user-select: none;
 }
