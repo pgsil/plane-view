@@ -10,7 +10,7 @@ export default class SettingsBox extends Component {
 
 	handleInput(e){
 		this.setState({value: e.target.value});
-		this.props.onZoom(e.target.value / 100 + 0.5);
+		this.props.onZoom(e.target.value / 100 + .2);
 	}
 
 	handleChange(e){

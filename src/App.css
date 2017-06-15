@@ -35,9 +35,8 @@
   color: white;
   z-index: 10000;
   position: relative;
-}
-.plane-svg{
-
+  cursor: move;
+  cursor: grab;
 }
 .settings-box {
     position: fixed;
@@ -47,9 +46,6 @@
     min-height: 100px;
     padding: 1em;
     z-index: 950000;
-}
-.MOTHERFUCK{
-
 }
 *{
   user-select: none;
