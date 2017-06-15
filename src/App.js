@@ -35,8 +35,7 @@ class App extends Component {
 			<div className="App">
 				<SettingsBox onZoom={this.handleSetZoom} onPlaneCheck={this.handleHidePlane} onChangeView={this.handleChangeView.bind(this)} />
 
-				<div className="planes-display " style={{zoom: this.state.zoom}}>
-
+				<div className="planes-display " style={{zoom: this.state.zoom, "-moz-transform": "scale(" + this.state.zoom + ")", "-moz-transform-origin": "0 0"}}>
 					{this.state.sr71 ? 
 						<Draggable axis="both" handle=".handle" position={null}>
 							<div className="wrap-drag">
