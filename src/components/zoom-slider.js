@@ -50,7 +50,7 @@ export default class SettingsBox extends Component {
 				<br/>
 				<input type="checkbox" name="sr71" defaultChecked="checked" onChange={this.handleChange.bind(this)} />SR-71
 				<input type="checkbox" name="xb70" defaultChecked="checked" onChange={this.handleChange.bind(this)} />XB-70
-				<input type="checkbox" name="a380" defaultChecked="checked" onChange={this.handleChange.bind(this)} />A380-800
+				<input type="checkbox" name="a380" onChange={this.handleChange.bind(this)} />A380-800
 			</div>
 		</div>
 		);
