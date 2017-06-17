@@ -12,7 +12,13 @@ class App extends Component {
 									view: 0,
 									sr71: true,
 									xb70: true,
-									a380: false
+									a380: false,
+									f4p: false,
+									f111: false,
+									an72: false,
+									c172: false,
+									rafale: false,
+									su34: false,
 									};
 		this.handleSetZoom = this.handleSetZoom.bind(this);
 		this.handleHidePlane = this.handleHidePlane.bind(this);
@@ -59,6 +65,60 @@ class App extends Component {
 							<div className="wrap-drag">
 								<div className="handle">Drag: A380-800</div>
 								<PlaneSVG plane="a380" view={this.state.view}/> 
+							</div>
+						</Draggable>
+					: null}
+
+					{this.state.f4p ? 
+						<Draggable axis="both" handle=".handle" position={null}>
+							<div className="wrap-drag">
+								<div className="handle">Drag: F-4 Phantom II</div>
+								<PlaneSVG plane="f4p" view={this.state.view}/> 
+							</div>
+						</Draggable>
+					: null}
+
+					{this.state.f111 ? 
+						<Draggable axis="both" handle=".handle" position={null}>
+							<div className="wrap-drag">
+								<div className="handle">Drag: F-111</div>
+								<PlaneSVG plane="f111" view={this.state.view}/> 
+							</div>
+						</Draggable>
+					: null}
+
+					{this.state.an72 ? 
+						<Draggable axis="both" handle=".handle" position={null}>
+							<div className="wrap-drag">
+								<div className="handle">Drag: An-72</div>
+								<PlaneSVG plane="an72" view={this.state.view}/> 
+							</div>
+						</Draggable>
+					: null}
+
+					{this.state.c172 ? 
+						<Draggable axis="both" handle=".handle" position={null}>
+							<div className="wrap-drag">
+								<div className="handle">Drag: Cessna 172</div>
+								<PlaneSVG plane="c172" view={this.state.view}/> 
+							</div>
+						</Draggable>
+					: null}
+
+					{this.state.rafale ? 
+						<Draggable axis="both" handle=".handle" position={null}>
+							<div className="wrap-drag">
+								<div className="handle">Drag: Dassault Rafale</div>
+								<PlaneSVG plane="rafale" view={this.state.view}/> 
+							</div>
+						</Draggable>
+					: null}
+
+					{this.state.su34 ? 
+						<Draggable axis="both" handle=".handle" position={null}>
+							<div className="wrap-drag">
+								<div className="handle">Drag: Su-34</div>
+								<PlaneSVG plane="su34" view={this.state.view}/> 
 							</div>
 						</Draggable>
 					: null}
