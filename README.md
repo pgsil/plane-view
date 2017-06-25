@@ -1,4 +1,4 @@
-# [plane-view](https://pgsil.github.io/plane-view/)
+# plane-view
 This is a SPA that shows plane blueprints *roughly* to scale so you can compare them.
 
 ## Features:
