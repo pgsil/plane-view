@@ -1,5 +1,5 @@
 # plane-view
-This is a SPA that shows plane blueprints *roughly* to scale so you can compare them.
+This is an SPA that shows plane blueprints *roughly* to scale so you can compare them.
 
 ## Features:
 * Uses SVG for perfect scaling on any zoom level and resolution
